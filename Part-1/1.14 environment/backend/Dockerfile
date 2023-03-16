@@ -16,7 +16,11 @@ ENV PATH="$PATH:/usr/src/app/go/bin"
 # copy sources
 COPY . .
 
+# linux machine with IP 192.168.10.40 is accessed from the host windows pc
+ENV REQUEST_ORIGIN=http://192.168.10.40:5000
+
 # run installer
 RUN go build
 
 ENTRYPOINT ["./server"]
+
