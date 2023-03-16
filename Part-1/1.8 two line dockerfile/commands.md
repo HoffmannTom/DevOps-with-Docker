@@ -1,3 +1,5 @@
+## Build image
+```
 $ docker build . -t web-server
 Sending build context to Docker daemon  2.048kB
 Step 1/2 : FROM devopsdockeruh/simple-web-service:alpine
@@ -7,8 +9,10 @@ Step 2/2 : CMD server
  ---> a7a1b9b3bcad
 Successfully built a7a1b9b3bcad
 Successfully tagged web-server:latest
+```
 
-
+## Run container
+```
 $ docker run web-server
 [GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
 
@@ -18,3 +22,4 @@ $ docker run web-server
 
 [GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
 [GIN-debug] Listening and serving HTTP on :8080
+```

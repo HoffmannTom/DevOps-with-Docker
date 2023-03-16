@@ -1,3 +1,5 @@
+## Build container
+```
 $ docker build . -t curler
 Sending build context to Docker daemon   5.12kB
 Step 1/6 : FROM ubuntu:20.04
@@ -19,7 +21,10 @@ Step 6/6 : CMD ./fetch.sh
  ---> b92f6dc712ad
 Successfully built b92f6dc712ad
 Successfully tagged curler:latest
+```
 
+## Run container
+```
 $ docker run -it curler
 Input website:
 helsinki.fi
@@ -32,3 +37,4 @@ Searching..
 </body>
 </html>
 Input website:
+```
