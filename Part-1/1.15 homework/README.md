@@ -1,6 +1,6 @@
 # EXERCISE 1.15: HOMEWORK
 ## docker-hub
-Link to container on docker-hub:
+Link to docker image on docker-hub:
 https://hub.docker.com/r/hoffmanntom/leaky
 
 
