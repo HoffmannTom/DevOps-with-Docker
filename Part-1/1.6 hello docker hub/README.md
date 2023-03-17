@@ -1,3 +1,4 @@
+# EXERCISE 1.6: HELLO DOCKER HUB
 ## Run container and show output
 ```
 $ docker run -it devopsdockeruh/pull_exercise
