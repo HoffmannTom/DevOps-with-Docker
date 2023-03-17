@@ -14,7 +14,7 @@ devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   2 years ago   83MB
 devopsdockeruh/simple-web-service   alpine    fd312adc88e0   2 years ago   15.7MB
 ```
 
-Observation: The alpine based image has only 15.7 MB compared to 83 MB for the ubuntu based image
+**Observation:** The alpine based image has only 15.7 MB compared to 83 MB for the ubuntu based image
 
 
 ## Verify secret message
