@@ -1,3 +1,4 @@
+# EXERCISE 1.1: GETTING STARTED
 ## Show all containers
 ```
 root@ubuntu22:~# docker ps -a
