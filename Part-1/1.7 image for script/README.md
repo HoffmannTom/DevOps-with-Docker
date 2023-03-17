@@ -1,3 +1,4 @@
+# EXERCISE 1.7: IMAGE FOR SCRIPT
 ## Build container
 ```
 $ docker build . -t curler
