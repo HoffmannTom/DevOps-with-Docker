@@ -4,6 +4,8 @@ After signing up, I created a new "Web Service".
 After entering the public Git repository URL https://github.com/HoffmannTom/leaky
 and pressing "continue", render.com automatically recognized the dockerfile and only needed a name, where I chose "leaky".
 Additionally, I changed the region to "Frankfurt (EU central)".
+|![settings for render.com](render-com-settings.jpg)|
+|-|
 
 The dockerfile is also submitted to the project:  
 https://github.com/HoffmannTom/leaky/blob/main/Dockerfile  
