@@ -9,6 +9,9 @@ Link to project page on github:
 https://github.com/HoffmannTom/leaky
 
 ## Installation and starting
+Install docker if not present:
+```apt install docker.io```
+
 Fetch the container with:  
 ```docker pull hoffmanntom/leaky```
 
