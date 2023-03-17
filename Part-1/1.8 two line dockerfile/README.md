@@ -1,3 +1,4 @@
+# EXERCISE 1.8: TWO LINE DOCKERFILE
 ## Build image
 ```
 $ docker build . -t web-server
