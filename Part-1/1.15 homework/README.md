@@ -8,7 +8,7 @@ https://hub.docker.com/r/hoffmanntom/leaky
 Link to project page on github:
 https://github.com/HoffmannTom/leaky
 
-## installation and running
+## Installation and starting
 Fetch the container with:  
 ```docker pull hoffmanntom/leaky```
 
