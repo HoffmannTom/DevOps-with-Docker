@@ -1,3 +1,4 @@
+# MANDATORY EXERCISE 1.14: ENVIRONMENT
 ## Build backend image and run container
 ```
 $ docker build . -t backend
