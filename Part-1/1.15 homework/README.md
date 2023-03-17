@@ -7,3 +7,13 @@ https://hub.docker.com/r/hoffmanntom/leaky
 ## github
 Link to project page on github:
 https://github.com/HoffmannTom/leaky
+
+## installation and running
+Fetch the container with:  
+```docker pull hoffmanntom/leaky```
+
+To run the container, use:  
+```docker run -d --rm -p 8000:8000 hoffmanntom/leaky```
+
+Now you can access the website via browser:  
+http://localhost:8000
