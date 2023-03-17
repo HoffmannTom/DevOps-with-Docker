@@ -24,3 +24,5 @@ $ docker run web-server
 [GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
 [GIN-debug] Listening and serving HTTP on :8080
 ```
+## Files
+For Dockerfile and shell-script, see submitted files in this folder.
