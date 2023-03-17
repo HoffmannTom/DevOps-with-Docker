@@ -1,4 +1,5 @@
-## Commands:
+# EXERCISE 1.3: SECRET MESSAGE
+## Command for starting and stopping the container
 
 ```
 docker container run -d devopsdockeruh/simple-web-service:ubuntu
@@ -10,7 +11,7 @@ exit
 docker stop 22748f340ed7
 ```
 
-## Secret message:
+## Secret message
 
 ```
 Secret message is: 'You can find the source code here: https://github.com/docker-hy'
