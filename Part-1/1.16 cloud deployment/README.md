@@ -1,3 +1,4 @@
+# EXERCISE 1.6: HELLO DOCKER HUB
 I used the website render.com to deploy the docker container.  
 After signing up, I created a new "Web Service".   
 After entering the public Git repository https://github.com/HoffmannTom/leaky
