@@ -1,3 +1,4 @@
+#EXERCISE 1.2: CLEANUP
 ## Show all containers and images
 ```
 root@ubuntu22:~# docker ps -a
