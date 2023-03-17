@@ -8,3 +8,6 @@ $ docker build . -t spring-project
 ```
 $ docker run -d --rm -p 127.0.0.1:8080:8080 spring-project
 ```
+
+## Files
+The Dockerfile is submitted within this folder, see directory on top of this page.
