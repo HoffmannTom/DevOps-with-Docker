@@ -1,4 +1,4 @@
-# EXERCISE 1.16:
+# EXERCISE 1.16: CLOUD DEPLOYMENT
 I used the website render.com to deploy the docker container.  
 After signing up, I created a new "Web Service".   
 After entering the public Git repository https://github.com/HoffmannTom/leaky
