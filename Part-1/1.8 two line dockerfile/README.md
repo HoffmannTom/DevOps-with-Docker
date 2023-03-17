@@ -25,4 +25,4 @@ $ docker run web-server
 [GIN-debug] Listening and serving HTTP on :8080
 ```
 ## Files
-For Dockerfile and shell-script, see submitted files in this folder.
+For Dockerfile, see submitted files in this folder.
