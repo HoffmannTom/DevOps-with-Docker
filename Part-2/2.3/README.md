@@ -6,5 +6,4 @@ $ docker compose up -d
 Test frontend in browser: http://localhost:8080
 ```
 $ docker compose down
-
 ```
