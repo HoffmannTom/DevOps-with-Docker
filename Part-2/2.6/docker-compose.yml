@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+
+    frontend:
+      image: frontend
+      ports:
+        - "5000:5000"
+      container_name: frontend
+
+    backend:
+      image: backend
+      ports:
+        - "8080:8080"
+      container_name: backend
+      environment:
+        - REDIS_HOST=redis
+        - REQUEST_ORIGIN=http://192.168.10.40:5000
+        - POSTGRES_HOST=db
+        - POSTGRES_USER=backend_user
+        - POSTGRES_PASSWORD=secret
+        - POSTGRES_DATABASE=backend_db
+      restart: unless-stopped
+
+    redis:
+      image: redis
+      container_name: redis
+
+    db:
+      image: postgres:13.2-alpine
+      restart: unless-stopped
+      environment:
+        - POSTGRES_USER=backend_user
+        - POSTGRES_PASSWORD=secret
+        - POSTGRES_DB=backend_db
+      container_name: db_redmine
