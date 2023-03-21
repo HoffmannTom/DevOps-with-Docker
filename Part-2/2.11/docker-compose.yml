@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+
+    frontend:
+      image: hoffmanntom/leaky
+      container_name: frontend
+      # port 8000
+
+    nginx:
+      image: nginx
+      volumes:
+        - "./nginx.conf:/etc/nginx/nginx.conf"
+        - "./certificate.key:/etc/nginx/certs/certificate.key"
+        - "./certificate.pem:/etc/nginx/certs/certificate.pem"
+        - "./ca.pem:/etc/nginx/certs/ca.pem"
+        - "./ffdhe4096.pem:/etc/ssl/ffdhe4096.pem"
+      ports:
+        - 80:80
+        - 443:443
+    #certbot:
+    #  image: certbot/certbot

@@ -1,6 +1,6 @@
-# EXERCISE 2.9: 
+# EXERCISE 2.10: 
 ## NMap Scan
-The  port mapping of frontend and backend service was removed in docker-compose.yml as only nginx port is needed.
+The  port mapping of frontend and backend service were removed in docker-compose.yml as only nginx port is needed.
  ``` 
 $ docker compose up -d
 [+] Running 5/5
@@ -21,3 +21,6 @@ PORT   STATE SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 0.09 seconds
 ``` 
+
+## Files
+For docker-compose and nginx-configuration file, see submitted files in this folder.
