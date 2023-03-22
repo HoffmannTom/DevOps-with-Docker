@@ -1,5 +1,5 @@
 # EXERCISE 2.11: 
-## SSL-Offloading
+## Development and SSL-Offloading
 My Django project uses the built-in lightweight webserver. It has the limitation that it only supports http.
 In production https is needed and the developer must be able to check the SSL configuration and harden it if necessary.
 
