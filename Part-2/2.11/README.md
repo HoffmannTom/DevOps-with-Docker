@@ -3,14 +3,14 @@
 My Django project uses the built-in lightweight webserver. It has the limitation that it only supports http.
 In production https is needed and the developer must be able to check the SSL configuration and harden it if necessary.
 
-For this purpose, an NGINX proxy is used which does SSL-Offloading and protects the data transfer.  
-The proxy servers also takes care to redirect http to https, supports OCSP stapling (if available by the CA) and can add a HSTS header.
-The SSL configuration is hardened to support only strong cryptographic ciphers and TLS versions (>= TLS 1.2).
-Details can be seen in the file nginx.conf.
-
 For development and testing, neither Python, nor Django has to be installed. A file editor and docker are sufficient.  
-With docker compose, the image can be built, the files are copied into the container and together with NGINX proxy, the webapplication is up and running.  
+With docker compose, the image can be built, the files are copied into the container and together with the NGINX proxy, the web application is up and running.  
 The mentioned Django project can be found at https://github.com/HoffmannTom/leaky.
+
+For enabling https, an NGINX proxy is used which takes care of SSL-Offloading and protects the data transfer.  
+The proxy server also takes care to redirect http to https, supports OCSP stapling (if available by the CA) and can add a HSTS header.
+The SSL configuration is hardened to support only strong cryptographic ciphers and TLS versions (>= TLS 1.2).
+Details can be found in the file nginx.conf.
 
 ## Generation of CA and keypair
 Generate private key and CSR:
