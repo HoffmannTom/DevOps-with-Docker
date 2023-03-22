@@ -3,7 +3,7 @@
 ```
 $ docker compose up -d --scale compute=5
 ```                 
-Test frontend in browser.
+Test frontend in browser (e.g. http://localhost:3000/).
 ```
 $ docker compose down
 ```
