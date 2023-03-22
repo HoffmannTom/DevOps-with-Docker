@@ -7,6 +7,8 @@ services:
       ports:
         - "5000:5000"
       container_name: frontend
+      depends_on:
+        - backend
 
     backend:
       image: backend
@@ -21,6 +23,9 @@ services:
         - POSTGRES_PASSWORD=secret
         - POSTGRES_DATABASE=backend_db
       restart: unless-stopped
+      depends_on:
+        - db
+        - redis
 
     redis:
       image: redis
