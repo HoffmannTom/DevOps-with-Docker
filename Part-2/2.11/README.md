@@ -8,6 +8,10 @@ The proxy servers also takes care to redirect http to https, supports OCSP stapl
 The SSL configuration is hardened to support only strong cryptographic ciphers and TLS versions (>= TLS 1.2).
 Details can be seen in the file nginx.conf.
 
+For development and testing, neither Python, nor Django has to be installed. A file editor and docker are sufficient.  
+With docker compose, the image can be built, the files are copied into the container and together with NGINX proxy, the webapplication is up and running.  
+The mentioned Django project can be found at https://github.com/HoffmannTom/leaky.
+
 ## Generation of CA and keypair
 Generate private key and CSR:
  ``` 
