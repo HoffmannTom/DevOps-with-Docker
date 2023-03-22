@@ -63,5 +63,5 @@ openssl verify -CAfile ca.pem certificate.pem
 Additional options are e.g., using NGINX as a loadbalancer or using the image certbot/certbot to automatically fetch and renew SSL certificate from Let's encrypt.
 
 ## Files
-For docker-compose, nginx-configuration file and keys for SSL, see submitted files in this folder.
-The python sources are located at https://github.com/HoffmannTom/leaky.
+For docker-compose, Dockerfile, nginx-configuration file and keys for SSL, see submitted files in this folder.
+The additional python sources are located at https://github.com/HoffmannTom/leaky.
