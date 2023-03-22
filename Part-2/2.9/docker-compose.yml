@@ -6,6 +6,8 @@ services:
       image: frontend
       build: ../rails/material-applications/example-frontend/
       container_name: frontend
+      depends_on:
+        - backend      
       # port 5000
 
     backend:
@@ -14,13 +16,15 @@ services:
       container_name: backend
       environment:
         - REDIS_HOST=redis
-        - REQUEST_ORIGIN=http://192.168.10.40/api
         - POSTGRES_HOST=db
         - POSTGRES_USER=backend_user
         - POSTGRES_PASSWORD=secret
         - POSTGRES_DATABASE=backend_db
 
       restart: unless-stopped
+      depends_on:
+        - db
+        - redis     
       # port 8080
 
     redis:
@@ -44,3 +48,6 @@ services:
         - "./nginx.conf:/etc/nginx/nginx.conf"
       ports:
         - 80:80
+      restart: unless-stopped
+      depends_on:
+        - frontend
