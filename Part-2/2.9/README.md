@@ -10,4 +10,13 @@ The backend server doesn't need the variable REQUEST_ORIGIN any more, because no
 NGINX does the request handling and browser sees only one origin for frontend and backend.  
 
 ## Rebuild images
-I added the build-paths to docker-compose.yml and ran "docker compose build" to create the adjusted images.
+I added the build-paths to docker-compose.yml and ran "docker compose build" to create the adjusted images before starting up the containers with
+```
+$ docker compose up -d
+```
+Website is now accessible via http://192.168.10.40/ and all buttons work. 
+
+Shutdown with:
+```
+$ docker compose down
+```
