@@ -1,4 +1,4 @@
-# EXERCISE 3.1: 
+# EXERCISE 3.1: YOUR PIPELINE
 ## Link to repository
 The application https://github.com/docker-hy/material-applications/tree/main/express-app was copied to https://github.com/HoffmannTom/express-app.
 A docker-compose.yml was added which includes watchtower.
