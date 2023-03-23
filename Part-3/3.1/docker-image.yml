@@ -1,0 +1,31 @@
+name: Release DevOps with Docker
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+
+  publish-docker-hub:
+    name: Publish image to Docker Hub
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout to the repository
+    - uses: actions/checkout@v3
+
+    #- name: Build the Docker image
+    #  run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
+    # We need to login so we can later push the image without issues.
+    - name: Login to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+    # Builds HoffmannTom/express-app
+    - name: Build and push
+      uses: docker/build-push-action@v4
+      with:
+        push: true
+        tags: hoffmanntom/express-app:latest
