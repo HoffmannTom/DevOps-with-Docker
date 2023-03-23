@@ -26,5 +26,5 @@ The services and corresponding id can be fetched via curl:
      --header 'Accept: application/json' \
      --header 'Authorization: Bearer <API-Token>'
 ```
-Alternatively, the service-id is within the Deploy Hook:  
-https<span>://api.render.com/deploy/<service-id>?key=\<parameter\>
+Alternatively, the service-id is hidden within the Deploy Hook:  
+https<span>://api.render.com/deploy/\<service-id\>?key=\<parameter\>
