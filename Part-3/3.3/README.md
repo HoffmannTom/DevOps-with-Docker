@@ -1,6 +1,6 @@
 # EXERCISE 3.3: BUILDING IMAGES INSIDE OF A CONTAINER
 ## Bash script
-The bash script gets the parameters, clonse the repo, builds the docker image and pushes it to docker hub.
+The bash script gets the parameters, clones the repo, builds the docker image and pushes it to docker hub.
 The user must login to docker hub  before with:
 ```
 docker login
