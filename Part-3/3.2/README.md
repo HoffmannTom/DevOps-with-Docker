@@ -10,7 +10,7 @@ For render.com there are two options for deployment:
    or can be fetched via curl, see command below.
    The action marketplace offers the action "sws2apps/render-deployment@v1.2.0" to deploy on render.com:
    https://github.com/sws2apps/render-deployment  
-   After settings the parameters for the service-id and the API token, the container was successfully deployed on render.com
+   After setting the parameters for the service-id and the API token, the container was successfully deployed on render.com
    
 2) Connect render.com with your github account and let render.com build and deploy the application.
    For this purpose, render can observe pull-requests and build and deploy the app.
