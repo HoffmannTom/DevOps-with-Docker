@@ -28,3 +28,7 @@ The services and corresponding id can be fetched via curl:
 ```
 Alternatively, the service-id is hidden within the Deploy Hook:  
 https<span>://api.render.com/deploy/\<service-id\>?key=\<parameter\>
+
+## File
+The workflow file docker-image.yml was added to this directory and is also available in the target repo:  
+https://github.com/HoffmannTom/leaky/blob/main/.github/workflows/docker-image.yml

@@ -1,0 +1,38 @@
+name: Release DevOps with Docker
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+
+  publish-docker-hub:
+    name: Publish image to Docker Hub
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout to the repository
+    - uses: actions/checkout@v3
+
+    # We need to login so we can later push the image without issues.
+    - name: Login to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+    # Builds hoffmanntom/leaky
+    - name: Build and push
+      uses: docker/build-push-action@v4
+      with:
+        push: true
+        tags: hoffmanntom/leaky:latest
+
+    - name: Render Deployment
+      # You may pin to the exact commit or the version.
+      # uses: sws2apps/render-deployment@5c3274c95919e875da2e6d8af0f93489d1d6e3e6
+      uses: sws2apps/render-deployment@v1.2.0
+      with:
+          serviceId: ${{ secrets.RENDER_SERVICE_ID }}
+          apiKey: ${{ secrets.RENDER_API_KEY }}
+          multipleDeployment: false #optional, default true
