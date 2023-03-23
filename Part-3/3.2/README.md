@@ -7,7 +7,7 @@ The deployed website is accessible at https://leaky.onrender.com
 For render.com there are two options for deployment:
 1) In the account settings of render.com we can create an API key, used as an access token.
    The service-id can be either extracted from the Deploy Hook (in the Settings-section)
-   or can be fetched via curl, see command below.
+   or can be fetched via curl, see command below.  
    The "GitHub action marketplace" offers the action "sws2apps/render-deployment@v1.2.0" to deploy on render.com:
    https://github.com/sws2apps/render-deployment  
    After setting the parameters for the service-id and the API token, the container was successfully deployed on render.com
