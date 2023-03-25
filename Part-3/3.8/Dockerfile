@@ -21,7 +21,7 @@ RUN apk add --no-cache curl nodejs npm && \
 
 
 
-FROM busybox:1.35
+FROM busybox:1.36
 
 WORKDIR /usr/src/app
 
