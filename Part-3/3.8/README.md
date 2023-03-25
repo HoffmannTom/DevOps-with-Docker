@@ -7,7 +7,7 @@ backend                                      latest         fef7928d80fa   About
 frontend                                     latest         d7e58f55aa1c   14 minutes ago       403MB
 ```
 
-After combining layers and deleting not needed packages:
+After using a two stage-build and switching to busybox image:
 ```
 $ docker images | grep frontend
 frontend                                     latest         d2cdeff22d21   24 seconds ago   6.05MB
