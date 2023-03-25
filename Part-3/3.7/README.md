@@ -12,8 +12,8 @@ After combining layers and deleting not needed packages:
 $ docker images | grep end
 backend                                      latest         fef7928d80fa   About a minute ago   161MB
 frontend                                     latest         d7e58f55aa1c   14 minutes ago       403MB
-
 ```
+
 Replacing Ubuntu with Alpine in the frontend service saved a lot of space in the image.
 The backend already based on Alpine and thus didn't show a big difference.
 
