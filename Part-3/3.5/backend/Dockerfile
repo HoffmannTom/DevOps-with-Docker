@@ -5,14 +5,12 @@ EXPOSE 8080
 
 WORKDIR /usr/src/app
 
-# gcompat needed as alpine is otherwise not running glibc compile binaries
+# install go
 RUN apk add --no-cache go
 
 # install go from tar
 # RUN wget https://go.dev/dl/go1.16.15.linux-amd64.tar.gz
 # RUN tar -C . -xzf go1.16.15.linux-amd64.tar.gz
-
-#ENV PATH="$PATH:/usr/src/app/go/bin"
 
 # copy sources
 COPY . .
