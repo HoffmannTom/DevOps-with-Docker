@@ -1,5 +1,5 @@
-# EXERCISE 3.5: 
-## Frontend and backend image size before optimization step 2
+# EXERCISE 3.7: 
+## Frontend and backend image size optimization step 2
 Get the image sizes before optimization:
 ```
 $ docker images | grep end
