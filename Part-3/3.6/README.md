@@ -14,7 +14,7 @@ backend                                      latest         f1c28fbb54f6   2 min
 frontend                                     latest         db080b3dd211   13 hours ago    658MB
 ```
 
-Deleting the go package from the alpine image saved a lot of space. 
+Deleting the go package from the alpine image in the backend service saved a lot of space.  
 The ubuntu image of the frontend service didn't change much. Curl doesn't take much space and nodejs is needed as a runtime environment.
 
 ## Files
