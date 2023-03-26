@@ -14,7 +14,7 @@ frontend                                     latest         d2cdeff22d21   24 se
 
 ```
 
-Using multi-stage bulid with alpine:3.16.0 shrinked the image size down to about 60 MB.
+Using multi-stage build with alpine:3.16.0 shrinked the image size down to about 60 MB.
 The packages nodejs and npm took quite much space and therefore I switched to busybox base image.
 It can serve static files and don't need additional packages. The image shrinked again to around 6 MB.
 
