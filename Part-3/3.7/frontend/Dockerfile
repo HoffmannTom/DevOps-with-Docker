@@ -15,11 +15,11 @@ RUN apk add --no-cache curl nodejs npm && \
     npm install && \
     npm run build && \
     npm install -g serve && \
-    adduser -D gouser && \
+    adduser -D httpuser && \
     apk del curl && \
     rm -rf /var/lib/apt/lists/*
 
 # now we can change the user
-USER gouser
+USER httpuser
 
 CMD ["serve", "-s", "-l", "5000", "build"]

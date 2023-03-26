@@ -15,7 +15,6 @@ RUN apk add --no-cache curl nodejs npm && \
     npm install && \
     npm run build && \
     npm install -g serve && \
-    adduser -D gouser && \
     apk del curl && \
     rm -rf /var/lib/apt/lists/*
 
@@ -31,9 +30,9 @@ WORKDIR /usr/src/app
 COPY --from=build-stage /usr/src/app/build/  /usr/src/app/
 
 # run all necessary commands
-RUN adduser -D gouser
+RUN adduser -D httpuser
 
 # now we can change the user
-USER gouser
+USER httpuser
 
 CMD ["busybox", "httpd", "-f", "-v", "-p", "5000"]

@@ -24,9 +24,9 @@ RUN npm run build
 RUN npm install -g serve
 
 # create the appuser
-RUN useradd -m gouser
+RUN useradd -m httpuser
 
 # now we can change the user
-USER gouser
+USER httpuser
 
 CMD ["serve", "-s", "-l", "5000", "build"]

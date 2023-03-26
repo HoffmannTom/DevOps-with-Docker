@@ -18,11 +18,11 @@ RUN apt-get update && \
     npm install && \
     npm run build && \
     npm install -g serve && \
-    useradd -m gouser && \
+    useradd -m httpuser && \
     apt-get purge -y --auto-remove curl && \
     rm -rf /var/lib/apt/lists/*
 
 # now we can change the user
-USER gouser
+USER httpuser
 
 CMD ["serve", "-s", "-l", "5000", "build"]
