@@ -1,6 +1,6 @@
 FROM alpine:3.16.0 as build-stage
 
-# app runs on port 8080
+# app runs on port 5000
 # EXPOSE 5000
 
 WORKDIR /usr/src/app
@@ -22,7 +22,7 @@ RUN apk add --no-cache curl nodejs npm && \
 
 FROM busybox:1.36
 
-# app runs on port 8080
+# app runs on port 5000
 EXPOSE 5000
 
 WORKDIR /usr/src/app
