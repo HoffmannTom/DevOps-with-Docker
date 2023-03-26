@@ -1,4 +1,4 @@
-# EXERCISE 3.8: 
+# EXERCISE 3.9: 
 ## Backend optimization step 3
 Get the image size before optimization:
 ```
