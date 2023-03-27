@@ -11,12 +11,11 @@ COPY . .
 ENV REACT_APP_BACKEND_URL=http://192.168.10.40/api
 
 # run installer
-RUN apk add --no-cache curl nodejs npm && \
+RUN apk add --no-cache nodejs npm && \
     npm install && \
     npm run build && \
     npm install -g serve && \
     adduser -D httpuser && \
-    apk del curl && \
     rm -rf /var/lib/apt/lists/*
 
 # now we can change the user
