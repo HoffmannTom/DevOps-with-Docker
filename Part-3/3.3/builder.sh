@@ -11,8 +11,8 @@ fi
 # git clone https://github.com/$1.git
 github=$1
 
-# cut off the last part which is the repo. The regex */ matches the part which is cut off
-repo=${github#*/}
+# extract the last part as the sub-directory
+repo=$(basename "$github")
 
 # docker container tag as 2nd parameter
 tag=$2
